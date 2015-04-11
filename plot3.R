@@ -9,7 +9,7 @@ entry_number_2006 = 21996
 entry_number_2007 = 525600
 
 # Read on ly 2006 and 2007 data directrly from the zip file
-HPC_data <- read.table("data/household_power_consumption.txt"
+HPC_data <- read.table("household_power_consumption.txt",
                        nrows=entry_number_2006 + entry_number_2007 + 1,
                        header=TRUE, sep=";", na.strings="?")
 
